@@ -1,24 +1,25 @@
 <html>
-
 <head>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <title>Home</title>
-    <!-- favicon -->
-    <link id="favicon" rel="icon" type="image/x-icon" href="https://www.googledrive.com/host/0BxRDplunxMIZSFVsR1RIa0M1VGc" />
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="https://www.googledrive.com/host/0BxRDplunxMIZaGtWbzNtS2Nndms" />
     <!-- jquery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- google api -->
-    <!--<script type="text/javascript" src="https://apis.google.com/js/client.js"></script>-->
-    <!-- math.min -->
-    <script type="text/javascript" src="https://www.googledrive.com/host/0BxRDplunxMIZTGRpb2VtQnBjQnM"></script>
-    <!-- lib -->
-    <script type="text/javascript" src="https://www.googledrive.com/host/0BxRDplunxMIZTkdpanBrOXdULUE"></script>
-    <!-- main -->
-    <script type="text/javascript" src="https://www.googledrive.com/host/0BxRDplunxMIZSG9GR0tLR1dnalk"></script>
+<script>
+var dir = "/images/";
+var fileextension = ".png";
+$.ajax({
+    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+    url: dir,
+    success: function (data) {
+        //List all .png file names in the page
+        $(data).find("a:contains(" + fileextension + ")").each(function () {
+            var filename = this.href.replace(window.location, "").replace("http://", "");
+            $("body").append("<img src='" + dir + filename + "'>");
+        });
+    }
+});
+</script>
 </head>
+<body>
 
-<body></body>
 
+</body>
 </html>
