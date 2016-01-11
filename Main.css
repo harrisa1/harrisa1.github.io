@@ -1,0 +1,285 @@
+body {
+    background-color: #E5E4D7;
+    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZRU82N0dtWmVzNU0);
+    font-family: 'Comic Sans MS';
+    font-size: 15.5px;
+}
+
+button {
+    background: #07C700;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(#07C700), color-stop(#06A600));
+    background-image: -webkit-linear-gradient(top, #07C700, #06A600);
+    background-image: -moz-linear-gradient(top, #07C700, #06A600);
+    background-image: -ms-linear-gradient(top, #07C700, #06A600);
+    background-image: -o-linear-gradient(top, #07C700, #06A600);
+    background-image: linear-gradient(to bottom, #07C700, #06A600);
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    font-family: 'Comic Sans MS';
+    color: #111;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #07DE00;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(#07DE00), color-stop(#07C700));
+    background-image: -webkit-linear-gradient(top, #07DE00, #07C700);
+    background-image: -moz-linear-gradient(top, #07DE00, #07C700);
+    background-image: -ms-linear-gradient(top, #07DE00, #07C700);
+    background-image: -o-linear-gradient(top, #07DE00, #07C700);
+    background-image: linear-gradient(to bottom, #07DE00, #07C700);
+    text-decoration: none;
+}
+
+button:disabled {
+    background: #07DE00;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(#07DE00), color-stop(#07C700));
+    background-image: -webkit-linear-gradient(top, #07DE00, #07C700);
+    background-image: -moz-linear-gradient(top, #07DE00, #07C700);
+    background-image: -ms-linear-gradient(top, #07DE00, #07C700);
+    background-image: -o-linear-gradient(top, #07DE00, #07C700);
+    background-image: linear-gradient(to bottom, #07DE00, #07C700);
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+span {
+    text-align: center;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Generic flexbox css */
+.flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignStretch {
+    align-items: stretch;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyStart {
+    justify-content: flex-start;
+}
+
+/* Menu attributes */
+.menu {
+    position: absolute;
+    top: 8;
+    left: 8;
+}
+
+.hidden {
+    display: none;
+}
+
+.image {
+    height: 19px;
+    width: 19px;
+}
+
+/* Calculator attributes */
+.calculator {
+    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZRU82N0dtWmVzNU0);
+    position: absolute;
+    top: 8;
+    right: 8;
+    border: 2px solid #06A600;
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    padding: 4px;
+    z-index: 20;
+}
+
+.calculatorText {
+    max-width: 390px;
+    word-wrap:break-word;
+    background: white;
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    text-align: right;
+    padding: 8px;
+    margin: 2px;
+    border: none;
+}
+
+.calculatorText:focus {
+    outline: none;
+    margin: 2px;
+}
+
+/* Home attributes */
+.home {
+    margin-top: 43px;
+}
+
+/* Stock ticker attributes */
+.stockTicker {
+    font-size: 35px;
+    min-width: 200px;
+}
+
+/* Clock attributes*/
+.clock {
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.clockFace { 
+    stroke-width: 2px; 
+    stroke: #757575; 
+}
+
+.hand { 
+    stroke-width: 1px;
+    fill: #fff;
+    stroke: #757575;
+}
+
+.sec { 
+    stroke: #ff1a1a; 
+}
+
+.tick {
+    stroke-width: 1px;
+    stroke: #fff;
+}
+
+.dot {
+    fill: #fff;
+}
+
+/* Stopwatch attributes */
+.stopwatch{
+    min-width: 200px;
+}
+
+.timer {
+    font-size: 100px;
+    color: #ff1a1a;
+    font-family: 'Lucida Console';
+}
+
+.timerLabel {
+    font-size: 35px;
+    color: #ff1a1a;
+}
+
+/* Notes attributes */
+.notes {
+    min-width: 850px;
+}
+
+.note {
+    position: relative;
+}
+
+.noteHeader {
+    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZOHpRZTlkLTJlclE);/* note-top.png */
+    height: 109px;
+    width: 764px;
+}
+
+.noteBody {
+    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZaHBaekQ1bEMxOTg);/* note-bg.png */
+    background-repeat: repeat;
+    background-position: 0, 0;
+    height: 700px;
+    width: 764px;
+}
+
+.noteFooter {
+    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZWlJ4U2RqRkJYQUk);/* note-bottom.png */
+    margin-top: -5px;
+    height: 78px;
+    width: 764px;
+}
+
+.noteTitle {
+    font-family: 'Comic Sans MS';
+    font-size: 15.6px;
+    cursor: text;
+    height: 30px;
+    width: 690px;
+    background: transparent;
+    position: absolute;
+    top: 59px;
+    left: 45px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.noteTitle:focus {
+    outline: none;
+    width: 690px;
+}
+
+.editor {
+    font-family: 'Comic Sans MS';
+    font-size: 15.6px;
+    cursor: text;
+    height: 750px;
+    width: 690px;
+    background: transparent;
+    position: absolute;
+    top: 99px;
+    left: 45px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.editor:focus {
+    outline: none;
+    width: 690px;
+}
