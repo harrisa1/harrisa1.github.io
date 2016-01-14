@@ -63,7 +63,7 @@
                     $('#uName').text('Welcome ' + user.name);
                     $('#imgHolder').attr('src', user.picture);
 					
-					$.ajax({
+					/*$.ajax({
 						url: "http://harrisa1.github.io/images",
 						success: function(data){
 						$(data).find("td > a").each(function(){
@@ -71,7 +71,7 @@
 							alert("Found a file: " + $(this).attr("href"));
 						});
 						}
-					});
+					});*/
 					
                 },
                 dataType: "jsonp"
@@ -96,6 +96,10 @@
             $('#uName').text('Welcome ');
             $('#imgHolder').attr('src', 'none.jpg');
         }
+		
+		function onClick() {
+			window.location.replace('');
+		}
 
     </script>
 </head>
@@ -106,5 +110,6 @@
     <iframe name='myIFrame' id="myIFrame" style='display:none'></iframe>
     <div id='uName'></div>
     <img src='' id='imgHolder'/>
+	<img src='/images/note-top.png'/>
 </body>
 </html>
