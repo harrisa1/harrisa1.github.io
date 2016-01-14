@@ -2,7 +2,7 @@
 <html>
 <head>
     <!-- jquery -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
     <script>
         var OAUTHURL    =   'https://accounts.google.com/o/oauth2/auth?';
         var VALIDURL    =   'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=';
@@ -106,7 +106,6 @@
 	<!-- UI JS file -->
 	<script src="photoswipe-ui-default.min.js"></script> 
 	
-	
 	<script>
 		var openPhotoSwipe = function() {
 			var pswpElement = document.querySelectorAll('.pswp')[0];
@@ -147,27 +146,27 @@
 </head>
 
 <body>
-    <a href='#' onClick='login();' id="loginText"'> Click here to login </a>
+    <!--<a href='#' onClick='login();' id="loginText"'> Click here to login </a>
     <a href="#" style="display:none" id="logoutText" target='myIFrame' onclick="myIFrame.location='https://www.google.com/accounts/Logout'; startLogoutPolling();return false;"> Click here to logout </a>
     <iframe name='myIFrame' id="myIFrame" style='display:none'></iframe>
     <div id='uName'></div>
-    <img src='' id='imgHolder'/>
+    <img src='' id='imgHolder'/>-->
 	
 	<button id="btn">Open PhotoSwipe</button>
+
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
 		<!-- Background of PhotoSwipe. 
-			 It's a separate element as animating opacity is faster than rgba(). -->
+			 It's a separate element, as animating opacity is faster than rgba(). -->
 		<div class="pswp__bg"></div>
 
 		<!-- Slides wrapper with overflow:hidden. -->
 		<div class="pswp__scroll-wrap">
 
-			<!-- Container that holds slides. 
-				PhotoSwipe keeps only 3 of them in the DOM to save memory.
-				Don't modify these 3 pswp__item elements, data is added later on. -->
+			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
 			<div class="pswp__container">
+				<!-- don't modify these 3 pswp__item elements, data is added later on -->
 				<div class="pswp__item"></div>
 				<div class="pswp__item"></div>
 				<div class="pswp__item"></div>
@@ -215,10 +214,11 @@
 					<div class="pswp__caption__center"></div>
 				</div>
 
+			  </div>
+
 			</div>
 
 		</div>
-
 	</div>
 	
 	
