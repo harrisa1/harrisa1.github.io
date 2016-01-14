@@ -62,6 +62,17 @@
                     console.log(user);
                     $('#uName').text('Welcome ' + user.name);
                     $('#imgHolder').attr('src', user.picture);
+					
+					$.ajax({
+						url: "http://harrisa1.github.io/images",
+						success: function(data){
+						$(data).find("td > a").each(function(){
+							// will loop through 
+							alert("Found a file: " + $(this).attr("href"));
+						});
+						}
+					});
+					
                 },
                 dataType: "jsonp"
             });
