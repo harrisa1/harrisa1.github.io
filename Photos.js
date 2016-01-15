@@ -133,14 +133,14 @@ var Photos = (function() {
 		var htmlFiles = [];
 		
 		for (var photo in horizontalFiles) {
-			var a = '<a href="https://copy.com/' + photo + '" data-size="1024x682">\
+			var a = '<a href="https://copy.com/' + horizontalFiles[photo] + '" data-size="1024x682">\
          			<img src="https://copy.com/' + photo + '"/>\
          			</a>';
          	htmlFiles.push(a);
 		}
 		
 		for (var photo in verticalFiles) {
-			var a = '<a href="https://copy.com/' + photo + '" data-size="682x1024">\
+			var a = '<a href="https://copy.com/' + verticalFiles[photo] + '" data-size="682x1024">\
          			<img src="https://copy.com/' + photo + '"/>\
          			</a>';
          	htmlFiles.push(a);
@@ -149,7 +149,7 @@ var Photos = (function() {
 		shuffle(htmlFiles);
 		
 		for (var photo in htmlFiles){
-			html += photo;
+			html += htmlFiles[photo];
 		}
 		
 		$('#my-gallery').html(html);
