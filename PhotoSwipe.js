@@ -15,14 +15,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
             if (linkEl.nodeType === 1) {
                 size = linkEl.getAttribute('data-size').split('x');
-                
-                var theImage = new Image();
-				theImage.src = linkEl.getAttribute('href');
-				theImage.onload = function() {
-  					console.log(theImage.height);
-  					console.log(theImage.width);
-				};
-                
 
                 // create slide object
                 item = {
