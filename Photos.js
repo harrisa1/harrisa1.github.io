@@ -136,7 +136,7 @@ var Photos = (function() {
 			var a = '<a href="https://copy.com/' + photo + '" data-size="1024x682">\
          			<img src="https://copy.com/' + photo + '"/>\
          			</a>';
-         	htmlFiles.add(a);
+         	htmlFiles.push(a);
 		}
 		
 		for (var photo in verticalFiles) {
