@@ -23,8 +23,8 @@
          <iframe name='myIFrame' id="myIFrame" style='display:none'></iframe>
          <div id='uName'></div>
          <img src='' id='imgHolder'/>-->
-      <div class="my-gallery">
-         <a href="https://copy.com/mJgr6YLA0yWFjUUn" data-size="374x500">
+      <div class="my-gallery" id="my-gallery">
+         <!--<a href="https://copy.com/mJgr6YLA0yWFjUUn" data-size="374x500">
          <img src="https://copy.com/mJgr6YLA0yWFjUUn"/>
          </a>
          <a href="images/note-bottom.png" data-size="764x78">
@@ -32,7 +32,7 @@
          </a>
          <a href="images/note-top.png" data-size="764x109">
          <img src="images/note-top.png"/>
-         </a>
+         </a>-->
       </div>
       <!-- Root element of PhotoSwipe. Must have class pswp. -->
       <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -69,8 +69,9 @@
             </div>
          </div>
       </div>
+     <script src="Photos.js"></script>
       <script>
-         initPhotoSwipeFromDOM('.my-gallery');
+         Photos.Init();
       </script>
    </body>
 </html>
