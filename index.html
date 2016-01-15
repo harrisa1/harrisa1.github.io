@@ -131,22 +131,25 @@
 
 				for(var i = 0; i < numNodes; i++) {
               	linkEl = thumbElements[i];
-
-					size = linkEl.getAttribute('data-size').split('x');
-
-					// create slide object
-					item = {
-						src: linkEl.getAttribute('href'),
-						w: parseInt(size[0], 10),
-						h: parseInt(size[1], 10)
-					};
-
-					if(linkEl.children.length > 0) {
-						// <img> thumbnail element, retrieving thumbnail url
-						item.msrc = linkEl.children[0].getAttribute('src');
-					}
               
-					items.push(item);
+              	if (linkEl.nodeType === 1)
+               {
+                   size = linkEl.getAttribute('data-size').split('x');
+
+                   // create slide object
+                   item = {
+                      src: linkEl.getAttribute('href'),
+                      w: parseInt(size[0], 10),
+                      h: parseInt(size[1], 10)
+                   };
+
+                   if(linkEl.children.length > 0) {
+                      // <img> thumbnail element, retrieving thumbnail url
+                      item.msrc = linkEl.children[0].getAttribute('src');
+                   }
+
+                   items.push(item);
+               }
 				}
 
 				return items;
