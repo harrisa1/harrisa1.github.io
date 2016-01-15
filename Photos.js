@@ -143,7 +143,7 @@ var Photos = (function() {
 			var a = '<a href="https://copy.com/' + photo + '" data-size="682x1024">\
          			<img src="https://copy.com/' + photo + '"/>\
          			</a>';
-         	htmlFiles.add(a);
+         	htmlFiles.push(a);
 		}
 		
 		shuffle(htmlFiles);
