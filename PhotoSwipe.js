@@ -14,8 +14,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             linkEl = thumbElements[i];
 
             if (linkEl.nodeType === 1) {
-                size = linkEl.getAttribute('data-size').split('x');
+                //size = linkEl.getAttribute('data-size').split('x');
 
+				
+    
+			    getImageSize($(linkEl), function(width, height){
+				    size = [width, height];
+				});
+				
                 // create slide object
                 item = {
                     src: linkEl.getAttribute('href'),
@@ -36,6 +42,19 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         return items;
     };
+	
+	function getImageSize(img, callback) {
+	    var $img = $(img);
+	
+	    var wait = setInterval(function() {
+	        var w = $img[0].naturalWidth,
+	            h = $img[0].naturalHeight;
+	        if (w && h) {
+	            clearInterval(wait);
+	            callback.apply(this, [w, h]);
+	        }
+	    }, 30);
+	}
 
     // find nearest parent element
     var closest = function closest(el, fn) {
