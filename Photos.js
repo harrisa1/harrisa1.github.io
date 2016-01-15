@@ -134,14 +134,14 @@ var Photos = (function() {
 		
 		for (var photo in horizontalFiles) {
 			var a = '<a href="https://copy.com/' + horizontalFiles[photo] + '" data-size="1024x682">\
-         			<img src="https://copy.com/' + photo + '"/>\
+         			<img src="https://copy.com/' + horizontalFiles[photo] + '"/>\
          			</a>';
          	htmlFiles.push(a);
 		}
 		
 		for (var photo in verticalFiles) {
 			var a = '<a href="https://copy.com/' + verticalFiles[photo] + '" data-size="682x1024">\
-         			<img src="https://copy.com/' + photo + '"/>\
+         			<img src="https://copy.com/' + verticalFiles[photo] + '"/>\
          			</a>';
          	htmlFiles.push(a);
 		}
