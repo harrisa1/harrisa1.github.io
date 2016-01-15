@@ -150,7 +150,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                 // parse real index when custom PIDs are used 
                 // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
                 for (var j = 0; j < items.length; j++) {
-                    if (items[j].pid == index) {
+                    if (items[j].pid === index) {
                         options.index = j;
                         break;
                     }
