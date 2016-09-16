@@ -9,8 +9,10 @@ var Home = (function() {
             <div id="' + name + 'Header"></div>\
             <div class="flex1 flexbox column alignCenter justifyCenter">\
                 <span id="StockTicker" class="stockTicker">NA</span>\
-                <span id="StockShares" class="stockTicker">Shares: ' + modules[name].shares + '</span>\
-                <span id="StockValue" class="stockTicker"></span>\
+                <span id="StockShares" class="stockTicker">Unvested Shares: ' + modules[name].unvested_shares + '</span>\
+                <span id="UnvestedStockValue" class="stockTicker"></span>\
+                <span id="StockShares" class="stockTicker">Vested Shares: ' + modules[name].vested_shares + '</span>\
+                <span id="VestedStockValue" class="stockTicker"></span>\
             </div>\
             <svg id="Clock" class="clock flex1" viewBox="0 0 100 100"></svg>\
             <div id="Stopwatch" class="stopwatch flex1 flexbox column alignCenter justifyCenter"></div>\
@@ -31,8 +33,10 @@ var Home = (function() {
                 color = '#07C700';
             }
             $('#StockTicker').css('color', color);
-            var val = stockInfo.l * modules[name].shares;
-            $('#StockValue').text('Value: ' + val.FormatMoney());
+            var vval = stockInfo.l * modules[name].vested_shares;
+            $('#VestedStockValue').text('Vested Value: ' + vval.FormatMoney());
+            var uval = stockInfo.l * modules[name].unvested_shares;
+            $('#UnvestedStockValue').text('Unvested Value: ' + uval.FormatMoney());
         });
     }
 

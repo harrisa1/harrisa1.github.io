@@ -1,0 +1,17 @@
+user11: 762e1fde-1889-4776-94ff-de8f8ca01d1e
+user10: d5450e9b-4036-40dd-830b-736124d7803f
+
+https://apps.inintca.com/platform/api/v1/configuration/organization
+
+response:
+{
+    "id": "0eef19ce-5244-47c0-8014-a4c0e029fe9a",
+    "name": "TEST-JoeW-Org",
+    "thirdPartyOrgId": "69476",                  --orgspanid
+    "thirdPartyOrgName": "testjoeworg",     --orgspanname
+    "version": 2,
+    "state": "ACTIVE",
+    "selfUri": "https://apps.inintca.com/platform/api/v1/configuration/organizations/<ordId>"
+}
+
+RealtimeZombieBaseUri="http://172.19.34.38:3000/"

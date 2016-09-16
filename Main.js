@@ -6,7 +6,8 @@ var modules = {
     Home: {
         gid: '0BxRDplunxMIZQWxnb29UMy1wbFE',
         level: 0,
-        shares: 536,
+        vested_shares: 59,
+        unvested_shares: 1059,
         image: '0BxRDplunxMIZSFVsR1RIa0M1VGc'
     },
     Clock: {
