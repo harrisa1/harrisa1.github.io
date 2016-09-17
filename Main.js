@@ -1,58 +1,58 @@
 var modules = {
     Menu: {
-        file: '0BxRDplunxMIZUjZjZzZ4VDg0RUU',
+        file: 'Menu.js',
         level: -1
     },
     Home: {
-        file: '0BxRDplunxMIZQWxnb29UMy1wbFE',
+        file: 'Home.js',
         level: 0,
         vested_shares: 59,
         unvested_shares: 1059,
         image: '0BxRDplunxMIZSFVsR1RIa0M1VGc'
     },
     Clock: {
-        file: '0BxRDplunxMIZTVk2a1RRb1gweVE',
+        file: 'Clock.js',
         level: 1
     },
     Stopwatch: {
-        file: '0BxRDplunxMIZUjQ4X0FKN2w3Y3c',
+        file: 'Stopwatch.js',
         level: 1
     },
     Calculator: {
-        file: '0BxRDplunxMIZZklYTk5NQ2VaVzA',
+        file: 'Calculator.js',
         level: -1,
         image: '0BxRDplunxMIZS25sdjlLeXdJS0k'
     },
     Finances: {
-        file: '0BxRDplunxMIZZS1sdFd1T1ZRa2c',
+        file: 'Finances.js',
         level: 0,
         image: '0BxRDplunxMIZTzhqS3l1QW1JcUk',
         resize: true,
         headerWidth: 0
     },
     Vacations: {
-        file: '0BxRDplunxMIZMGl1OWhPZzR6MkE',
+        file: 'Vacations.js',
         level: 0,
         image: '0BxRDplunxMIZak5pNTVib01NSXM',
         resize: true,
         headerWidth: 0
     },
     WishList: {
-        file: '0BxRDplunxMIZTHJPSTMwTDRxNjQ',
+        file: 'Wish List.js',
         level: 0,
         image: '0BxRDplunxMIZVC1uT3RPc2pkX0E',
         resize: true,
         headerWidth: 0
     },
     Todos: {
-        file: '0BxRDplunxMIZZEUwdk1jVm84X1U',
+        file: 'Todos.js',
         level: 0,
         image: '0BxRDplunxMIZZWIyLWRGTk9qNVU',
         resize: true,
         headerWidth: 0
     },
     Meals: {
-        file: '0BxRDplunxMIZQTNId3h2c09mU2M',
+        file: 'Meals.js',
         level: 0,
         image: '0BxRDplunxMIZbU1aUWluYTBDYlk',
         resize: true,
