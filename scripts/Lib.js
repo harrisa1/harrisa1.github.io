@@ -112,7 +112,7 @@ function PlaceCaretAtEnd(element) {
 /* Page Events */
 function LoadScripts() {
     for (var module in modules) {
-        $.getScript("/scripts/Modules/" + modules[module].file);
+        $.getScript("/scripts/modules/" + modules[module].file);
     }
 }
 
