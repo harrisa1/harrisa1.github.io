@@ -5,7 +5,7 @@ var Menu = (function() {
     function GetHTML() {
         var html = '<div id="' + name + 'Header">';
         for (var prop in buttons) {
-            if (buttons[prop].image !== "/images/icons") {
+            if (buttons[prop].image !== '/images/icons') {
                 var title = prop === 'WishList' ? 'Wish List' : prop;
                 html += '\
                         <button id="' + prop + '" title="' + title + '">\

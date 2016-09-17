@@ -15,15 +15,15 @@ var Finances = (function() {
         },
         'Expenses': {
             gid: '1496123519',
-            image: '0BxRDplunxMIZcGo0SmI3VUhWcTA'
+            image: 'expenses.png'
         },
         'Utilities': {
             gid: '1987066953',
-            image: '0BxRDplunxMIZMDdvcEV5VzRJX2M'
+            image: 'utilities.png'
         },
         'Insurance': {
             gid: '164749290',
-            image: '0BxRDplunxMIZTE1UREtfcGpvdEU'
+            image: 'insurance.png'
         },
         'Debts': {
             gid: '396222271'
@@ -39,27 +39,27 @@ var Finances = (function() {
         },
         'Furniture': {
             gid: '1295148257',
-            image: '0BxRDplunxMIZcWtFNEJyYnNISVE'
+            image: 'furniture.png'
         },
         'Jewelry': {
             gid: '1563014550',
-            image: '0BxRDplunxMIZd0hFTkhKSWJmbEk'
+            image: 'jewelry.png'
         },
         'Electronics': {
             gid: '736964413',
-            image: '0BxRDplunxMIZWmQyektUZVdCdHc'
+            image: 'electronics.png'
         },
         'Currency': {
             gid: '268614037',
-            image: '0BxRDplunxMIZbjRWVnh2V1FSaWs'
+            image: 'currency.png'
         },
         'Coin Collections': {
             gid: '1980886027',
-            image: '0BxRDplunxMIZOWVNTFZ0UmRfS00'
+            image: 'collections.png'
         },
         'Foreign Currency': {
             gid: '689492229',
-            image: '0BxRDplunxMIZOFRQVkc4RHA2RVU'
+            image: 'foreign currency.png'
         },
 
     };
