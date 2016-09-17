@@ -9,7 +9,7 @@ var Menu = (function() {
                 var title = prop === 'WishList' ? 'Wish List' : prop;
                 html += '\
                         <button id="' + prop + '" title="' + title + '">\
-                            <img src="' + /images/icons/ + modules[prop].image + '" alt="' + prop + '" class="image">\
+                            <img src="/images/icons/' + modules[prop].image + '" alt="' + prop + '" class="image">\
                         </button>\
                         ';
             } else {
