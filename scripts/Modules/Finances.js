@@ -83,13 +83,13 @@ var Finances = (function() {
                             <button id="Accounts">Accounts</button>\
                             <div class="flexbox row alignStretch">\
                                 <button id="Expenses" title="Expenses">\
-                                    <img src="' + host + buttons.Expenses.image + '" alt="Expenses" class="image">\
+                                    <img src="/images/icons/' + buttons.Expenses.image + '" alt="Expenses" class="image">\
                                 </button>\
                                 <button id="Utilities" title="Utilities">\
-                                    <img src="' + host + buttons.Utilities.image + '" alt="Utilities" class="image">\
+                                    <img src="/images/icons/' + buttons.Utilities.image + '" alt="Utilities" class="image">\
                                 </button>\
                                 <button id="Insurance" title="Insurance">\
-                                    <img src="' + host + buttons.Insurance.image + '" alt="Insurance" class="image">\
+                                    <img src="/images/icons/' + buttons.Insurance.image + '" alt="Insurance" class="image">\
                                 </button>\
                             </div>\
                         </div>\
@@ -97,22 +97,22 @@ var Finances = (function() {
                             <button id="Assets">Assets</button>\
                             <div class="flexbox row alignStretch">\
                                 <button id="Furniture" title="Furniture">\
-                                    <img src="' + host + buttons.Furniture.image + '" alt="Furniture" class="image">\
+                                    <img src="/images/icons/' + buttons.Furniture.image + '" alt="Furniture" class="image">\
                                 </button>\
                                 <button id="Jewelry" title="Jewelry">\
-                                    <img src="' + host + buttons.Jewelry.image + '" alt="Jewelry" class="image">\
+                                    <img src="/images/icons/' + buttons.Jewelry.image + '" alt="Jewelry" class="image">\
                                 </button>\
                                 <button id="Electronics" title="Electronics">\
-                                    <img src="' + host + buttons.Electronics.image + '" alt="Electronics" class="image">\
+                                    <img src="/images/icons/' + buttons.Electronics.image + '" alt="Electronics" class="image">\
                                 </button>\
                                 <button id="Currency" title="Currency">\
-                                    <img src="' + host + buttons.Currency.image + '" alt="Currency" class="image">\
+                                    <img src="/images/icons/' + buttons.Currency.image + '" alt="Currency" class="image">\
                                 </button>\
                                 <button id="Coin Collections" title="Coin Collections">\
-                                    <img src="' + host + buttons['Coin Collections'].image + '" alt="Coin Collections" class="image">\
+                                    <img src="/images/icons/' + buttons['Coin Collections'].image + '" alt="Coin Collections" class="image">\
                                 </button>\
                                 <button id="Foreign Currency" title="Foreign Currency">\
-                                    <img src="' + host + buttons['Foreign Currency'].image + '" alt="Foreign Currency" class="image">\
+                                    <img src="/images/icons/' + buttons['Foreign Currency'].image + '" alt="Foreign Currency" class="image">\
                                 </button>\
                             </div>\
                         </div>\

@@ -5,11 +5,11 @@ var Menu = (function() {
     function GetHTML() {
         var html = '<div id="' + name + 'Header">';
         for (var prop in buttons) {
-            if (buttons[prop].image != host) {
+            if (buttons[prop].image !== "/images/icons") {
                 var title = prop === 'WishList' ? 'Wish List' : prop;
                 html += '\
                         <button id="' + prop + '" title="' + title + '">\
-                            <img src="' + host + modules[prop].image + '" alt="' + prop + '" class="image">\
+                            <img src="' + /images/icons/ + modules[prop].image + '" alt="' + prop + '" class="image">\
                         </button>\
                         ';
             } else {
@@ -23,7 +23,7 @@ var Menu = (function() {
     function GetCalculator() {
         var html = '\
                 <button id="CalcButton">\
-                    <img src="' + host + modules.Calculator.image + '" alt="Calculator" class="image">\
+                    <img src="/images/icons/' + modules.Calculator.image + '" alt="Calculator" class="image">\
                 </button>\
                 ';
         $('#' + name + 'Header').html($('#' + name + 'Header').html() + html);
@@ -51,7 +51,7 @@ var Menu = (function() {
             document.title = title;
         }
         $('#favicon').remove();
-        $('head').append('<link id="favicon" rel="icon" type="image/x-icon" href="' + host + modules[title].image + '"/>');
+        $('head').append('<link id="favicon" rel="icon" type="image/x-icon" href="/images/icons/'+ modules[title].image + '"/>');
         ToggleVisibility(title);
         DisableButton(button, buttons);
         return title;
