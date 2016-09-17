@@ -8,7 +8,7 @@ var modules = {
         level: 0,
         vested_shares: 59,
         unvested_shares: 1059,
-        image: '0BxRDplunxMIZSFVsR1RIa0M1VGc'
+        image: 'home.png'
     },
     Clock: {
         file: 'Clock.js',
@@ -21,40 +21,40 @@ var modules = {
     Calculator: {
         file: 'Calculator.js',
         level: -1,
-        image: '0BxRDplunxMIZS25sdjlLeXdJS0k'
+        image: 'calculator.png'
     },
     Finances: {
         file: 'Finances.js',
         level: 0,
-        image: '0BxRDplunxMIZTzhqS3l1QW1JcUk',
+        image: 'finances.png',
         resize: true,
         headerWidth: 0
     },
     Vacations: {
         file: 'Vacations.js',
         level: 0,
-        image: '0BxRDplunxMIZak5pNTVib01NSXM',
+        image: 'vacations.png',
         resize: true,
         headerWidth: 0
     },
     WishList: {
         file: 'Wish List.js',
         level: 0,
-        image: '0BxRDplunxMIZVC1uT3RPc2pkX0E',
+        image: 'wishlist.png',
         resize: true,
         headerWidth: 0
     },
     Todos: {
         file: 'Todos.js',
         level: 0,
-        image: '0BxRDplunxMIZZWIyLWRGTk9qNVU',
+        image: 'todos.png',
         resize: true,
         headerWidth: 0
     },
     Meals: {
         file: 'Meals.js',
         level: 0,
-        image: '0BxRDplunxMIZbU1aUWluYTBDYlk',
+        image: 'meals.png',
         resize: true,
         headerWidth: 0
     }
