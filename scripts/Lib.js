@@ -1,12 +1,11 @@
 /* Global Variables*/
-var host = 'https://www.googledrive.com/host/';
 var marginBuffer = 8;
 
 /* Sizing Methods */
 function SetHeight(element, buffer, margins) {
     var height = $(document).height();
     height -= buffer + marginBuffer * margins;
-    height = (height < 0) ? 0 : height;
+    height = height < 0 ? 0 : height;
     $('#' + element).height(height + 'px');
 }
 
@@ -113,7 +112,7 @@ function PlaceCaretAtEnd(element) {
 /* Page Events */
 function LoadScripts() {
     for (var module in modules) {
-        $.getScript(host + modules[module].gid);
+        $.getScript("/scripts/Modules/" + modules[module].file);
     }
 }
 
