@@ -127,7 +127,7 @@ iframe {
 
 /* Calculator attributes */
 .calculator {
-    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZRU82N0dtWmVzNU0);
+    background-image: url(/images/wood-texture.jpg);
     position: absolute;
     top: 8;
     right: 8;
@@ -224,13 +224,13 @@ iframe {
 }
 
 .noteHeader {
-    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZOHpRZTlkLTJlclE);/* note-top.png */
+    background-image: url(/images/note-top.png);
     height: 109px;
     width: 764px;
 }
 
 .noteBody {
-    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZaHBaekQ1bEMxOTg);/* note-bg.png */
+    background-image: url(/images/note-bg.png);
     background-repeat: repeat;
     background-position: 0, 0;
     height: 700px;
@@ -238,7 +238,7 @@ iframe {
 }
 
 .noteFooter {
-    background-image: url(https://www.googledrive.com/host/0BxRDplunxMIZWlJ4U2RqRkJYQUk);/* note-bottom.png */
+    background-image: url(/images/note-bottom.png);
     margin-top: -5px;
     height: 78px;
     width: 764px;
