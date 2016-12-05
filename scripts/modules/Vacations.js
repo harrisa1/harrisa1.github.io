@@ -22,11 +22,7 @@ var Vacations = (function() {
     }
 
     function GetHTMLHeader() {
-        var html = '<div id="' + name + 'Header">';
-        for (var prop in buttons) {
-            html += '<button id="' + prop + '">' + prop + '</button>';
-        }
-        html += '</div>';
+        var html = '<div id="' + name + 'Header"></div>';
         return html;
     }
 
@@ -34,20 +30,9 @@ var Vacations = (function() {
         Init: function() {
             GetHTML();
             SetContainerClasses(name, containerClasses);
-            UpdateButtons(buttons, RegisterButtonClick, function(button) {
-                return Vacations.OnClick;
-            });
             var url = sheetURL + '/edit#gid=107241447';
             $('#' + name + 'Sheet').attr('src', url);
             this.Resize();
-            debugger;
-            $('#Vacation Ideas').prop("disabled", true);
-        },
-        OnClick: function() {
-            var id = event.target.id;
-            DisableButton(event.target, buttons);
-            var url = sheetURL + '/edit#gid=' + buttons[id].gid;
-            $('#' + name + 'Sheet').attr('src', url);
         },
         Resize: function() {
             ResizeIFrame(name);
