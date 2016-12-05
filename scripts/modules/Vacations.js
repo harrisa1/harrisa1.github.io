@@ -37,10 +37,10 @@ var Vacations = (function() {
             UpdateButtons(buttons, RegisterButtonClick, function(button) {
                 return Vacations.OnClick;
             });
-            var url = sheetURL + '/edit#gid=0';
+            var url = sheetURL + '/edit#gid=107241447';
             $('#' + name + 'Sheet').attr('src', url);
             this.Resize();
-            $('#Vacation Ideas').prop("disabled", true);
+            $('#VacationIdeas').prop("disabled", true);
         },
         OnClick: function() {
             var id = event.target.id;
