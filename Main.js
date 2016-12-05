@@ -6,8 +6,6 @@ var modules = {
     Home: {
         file: 'Home.js',
         level: 0,
-        vested_shares: 86,
-        unvested_shares: 1059,
         image: 'home.png'
     },
     Clock: {
