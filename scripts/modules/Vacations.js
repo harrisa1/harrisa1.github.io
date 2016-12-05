@@ -40,7 +40,7 @@ var Vacations = (function() {
             var url = sheetURL + '/edit#gid=107241447';
             $('#' + name + 'Sheet').attr('src', url);
             this.Resize();
-            $('#VacationIdeas').prop("disabled", true);
+            $('#Vacation Ideas').prop("disabled", true);
         },
         OnClick: function() {
             var id = event.target.id;
