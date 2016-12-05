@@ -7,8 +7,8 @@ var Vacations = (function() {
     var sheetID = '1rYyCg0VnkIg750Le1HBwZkJxRxaDVNDzIRZW3XC5qro';
     var sheetURL = sheetsURL + sheetID;
     var buttons = {
-        'Timeoff': {
-            gid: '0'
+        'Camping Ideas': {
+            gid: '704998962'
         },
         'Vacation Ideas': {
             gid: '107241447'
@@ -40,7 +40,7 @@ var Vacations = (function() {
             var url = sheetURL + '/edit#gid=0';
             $('#' + name + 'Sheet').attr('src', url);
             this.Resize();
-            $('#Timeoff').prop("disabled", true);
+            $('#Vacation Ideas').prop("disabled", true);
         },
         OnClick: function() {
             var id = event.target.id;
