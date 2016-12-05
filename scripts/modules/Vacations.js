@@ -7,11 +7,11 @@ var Vacations = (function() {
     var sheetID = '1rYyCg0VnkIg750Le1HBwZkJxRxaDVNDzIRZW3XC5qro';
     var sheetURL = sheetsURL + sheetID;
     var buttons = {
-        'Camping Ideas': {
-            gid: '704998962'
-        },
         'Vacation Ideas': {
             gid: '107241447'
+        },
+        'Camping Ideas': {
+            gid: '704998962'
         }
     };
 
